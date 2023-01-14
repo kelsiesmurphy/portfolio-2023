@@ -7,6 +7,9 @@ const SectionWrapper = styled.div`
 	justify-content: center;
     background-color: var(--clr-grey-050);
 	padding: 2rem;
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--clr-primary-700);
+	}
 `;
 
 const ProjectView = ({ selectedProject }) => {

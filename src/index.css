@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--clr-primary-800);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -147,7 +147,7 @@ img.responsive {
 
 a {
   font-weight: 500;
-  color: var(--clr-primary-700);
+  color: var(--clr-primary-300);
   text-decoration: inherit;
   transition: color 0.2s ease-out;
 }
@@ -156,7 +156,7 @@ a > img {
   transition: transform 0.2s ease-out;
 }
 a:hover {
-  color: var(--clr-primary-600);
+  color: var(--clr-primary-200);
 }
 
 a:hover > img:not(.link-icon) {
@@ -262,6 +262,9 @@ input:focus {
   :root {
     color: var(--clr-grey-900);
     background-color: #ffffff;
+  }
+  a {
+    color: var(--clr-primary-700);
   }
   a:hover {
     color: var(--clr-primary-900);

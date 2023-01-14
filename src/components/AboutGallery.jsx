@@ -4,13 +4,15 @@ const GalleryWrapper = styled.div`
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    margin: auto;
     > img {
         max-height: 50vh;
     }
-    @media (max-width: 1200px) {
+    @media (max-width: 900px) {
         flex-flow: row wrap;
         > img {
-            max-height: 100vh;
+            max-height: 280px;
+            max-width: 280px;
         }
     }
 `

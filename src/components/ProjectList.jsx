@@ -17,6 +17,14 @@ const ListItem = styled.li`
 	> h3.active {
 		color: var(--clr-grey-700);
 	}
+	@media (prefers-color-scheme: dark) {
+		> h3 {
+			color: var(--clr-grey-600);
+		}
+		> h3.active {
+			color: var(--clr-grey-100);
+		}
+	}
 `;
 
 const ProjectList = ({ allProjects, selectedProject, setSelectedProject }) => {

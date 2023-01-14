@@ -13,12 +13,18 @@ const IntroWrapper = styled.div`
 
 const StyledH1 = styled.h1`
 	margin-top: 1rem;
+	@media (prefers-color-scheme: dark) {
+		color: white;
+	}
 `;
 
 const Intro = () => {
 	return (
 		<IntroWrapper>
-			<img alt="Kelsie Murphy Logo" src="/km-logomark.png" width="78"/>
+			<picture>
+				<source srcSet="/km-logomark-white.PNG" media="(prefers-color-scheme: dark)" />
+				<img src="/km-logomark.png" alt="Kelsie Murphy Logo" width="78" />
+			</picture>
 			<StyledH1>Hi, I’m Kelsie!</StyledH1>
 			<h2>I’m a developer with a passion for front-end and all things user experience</h2>
 			<Link to="/about" className="button btn-secondary">About Me<img alt="" src="/arrow-up-right.svg"/></Link>
