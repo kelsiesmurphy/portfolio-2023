@@ -124,7 +124,7 @@ Error generating stack: `+o.message+`
 	}
 `,uv=we.li`
 	list-style: none;
-`,kd=()=>{const e=ov.map((t,n)=>_(uv,{children:_("a",{href:t.href,children:_("img",{alt:t.name,className:"link-icon",src:t.image})})},n));return re(iv,{className:"footer",children:[_("p",{children:"© Kelsie S. Murphy 2022"}),_("ul",{children:e})]})},av=we.div`
+`,kd=()=>{const e=ov.map((t,n)=>_(uv,{children:_("a",{href:t.href,children:_("img",{alt:t.name,className:"link-icon",src:t.image})})},n));return re(iv,{className:"footer",children:[_("p",{children:"© Kelsie S. Murphy 2023"}),_("ul",{children:e})]})},av=we.div`
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
