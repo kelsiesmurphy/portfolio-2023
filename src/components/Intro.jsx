@@ -26,7 +26,7 @@ const Intro = () => {
 				<img src="/km-logomark.png" alt="Kelsie Murphy Logo" width="78" />
 			</picture>
 			<StyledH1>Hi, I’m Kelsie!</StyledH1>
-			<h2>I’m a developer with a passion for front-end and all things user experience</h2>
+			<h2>I'm a developer with a passion for coding for good and creating a next-level user experience</h2>
 			<Link to="/about" className="button btn-secondary">About Me<img alt="" src="/arrow-up-right.svg"/></Link>
 		</IntroWrapper>
 	)

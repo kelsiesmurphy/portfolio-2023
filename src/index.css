@@ -42,7 +42,7 @@
   --fs-display-lg: 3.75rem;
   --fs-display-md: 2.75rem;
   --fs-display-sm: 2.375rem;
-  --fs-display-xs: 2.1rem;
+  --fs-display-xs: 1.8rem;
 
   --fs-text-xl: 1.25rem;
   --fs-text-lg: 1.125rem;
@@ -89,7 +89,6 @@ img.responsive {
   flex-flow: row wrap;
   gap: 0.75rem;
   min-width: 288px;
-  justify-content: center;
 }
 
 .button {
@@ -183,20 +182,20 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: var(--fs-display-md);
   font-weight: var(--fw-medium);
-  color: var(--clr-primary-900);
+  color: var(--clr-primary-600);
 }
 
 h2 {
   font-size: var(--fs-display-xs);
   font-weight: var(--fw-medium);
-  color: var(--clr-primary-500);
+  color: var(--clr-primary-400);
   
 }
 
 h3 {
   font-size: var(--fs-display-xs);
   font-weight: var(--fw-medium);
-  color: var(--clr-primary-700);
+  color: var(--clr-primary-500);
 }
 
 h4 {
@@ -214,7 +213,7 @@ h6 {
 p {
   font-size: var(--fs-text-md);
   font-weight: var(--fw-normal);
-  color: var(--clr-grey-500);
+  color: var(--clr-grey-400);
   line-height: 26px;
 }
 
@@ -232,6 +231,13 @@ p {
 
 .text-size-tiny {
   font-size: var(--fs-text-xs);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--clr-grey-300);
+  margin-block: 1.5rem 0.5rem;
 }
 
 /* Forms */
@@ -268,6 +274,19 @@ input:focus {
   }
   a:hover {
     color: var(--clr-primary-900);
+  }
+  p {
+    color: var(--clr-grey-500);
+  }
+  h1 {
+    color: var(--clr-primary-900);
+  }
+  h2 {
+    color: var(--clr-primary-500);
+    
+  }
+  h3 {
+    color: var(--clr-primary-700);
   }
 }
 

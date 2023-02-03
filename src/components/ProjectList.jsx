@@ -27,10 +27,11 @@ const ListItem = styled.li`
 	}
 `;
 
-const ProjectList = ({ allProjects, selectedProject, setSelectedProject }) => {
+const ProjectList = ({ allProjects, selectedProject, setSelectedProject, scrollToRef }) => {
 
 	const handleProjectClick = (project) => {
 		setSelectedProject(project)
+		scrollToRef.current.scrollIntoView()
 	};
 
 	const listOfProjects = allProjects.map((project, index) => {

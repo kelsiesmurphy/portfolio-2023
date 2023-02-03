@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Footer from "../components/Footer";
 import Intro from "../components/Intro";
 import ProjectList from "../components/ProjectList";
 import ProjectView from "../components/ProjectView";
 import styled from "styled-components";
 import Projects from "../data/Projects";
+import ProjectDetails from "./ProjectDetails";
 
 const PageWrapper = styled.div`
 	display: flex;
@@ -31,19 +32,26 @@ const Home = () => {
 	const [selectedProject, setSelectedProject] = useState(Projects[0])
 	const [allProjects, setAllProjects] = useState(Projects)
 
+	const scrollToRef = useRef()
+
 	return (
-		<PageWrapper>
-			<div>
-				<MainContent>
-					<Intro />
-					<ProjectList allProjects={allProjects} selectedProject={selectedProject} setSelectedProject={setSelectedProject}/>
-				</MainContent>
-				<Footer />
-			</div>
-			<div>
-				<ProjectView selectedProject={selectedProject}/>
-			</div>
-		</PageWrapper>
+		<>
+			<PageWrapper>
+				<div>
+					<MainContent>
+						<Intro />
+						<ProjectList allProjects={allProjects} selectedProject={selectedProject} setSelectedProject={setSelectedProject} scrollToRef={scrollToRef}/>
+					</MainContent>
+					<Footer />
+				</div>
+				<div>
+					<ProjectView selectedProject={selectedProject} scrollToRef={scrollToRef}/>
+				</div>
+			</PageWrapper>
+			{selectedProject &&
+				<ProjectDetails selectedProject={selectedProject} scrollToRef={scrollToRef} />
+			}
+		</>
 	)
 }
 
