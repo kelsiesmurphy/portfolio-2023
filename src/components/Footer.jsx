@@ -30,7 +30,7 @@ const Footer = () => {
 	})
 	return (
 		<StyledFooter className="footer">
-			<p>© Kelsie S. Murphy 2022</p>
+			<p>© Kelsie S. Murphy 2023</p>
 			<ul>
 				{socialList}
 			</ul>
