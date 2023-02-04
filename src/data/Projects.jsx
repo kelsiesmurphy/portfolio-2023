@@ -41,11 +41,11 @@ const Projects = [
 		image: '/portfolio-images/pocketlint.png', 
 		github: 'https://github.com/kelsiesmurphy/pocketlint',
 		demo: '',
-		code: '',
+		code: '/code-snippets/pocketlint_code.png',
 		projectType: 'Personal Project',
 		description: 'PocketLint is a minimal e-commerce site that sells high quality items you would carry everyday in your pocket, built solo over 1 month.',
-		furtherDetails: ' The goal of this project was to gain experience in building React applications completely solo, and set up a payment solution using Stripe. I had previously designed this e-commerce site in Figma, and it was a good opportunity to build it in React, experiment with the Stripe API, and use Tailwind CSS for the first time.',
-		reflections: 'In using TailwindCSS for the first time, I have discovered its pros and cons, and have come to the conclusion that I would use it again for personal projects in the future. I also have increased my knowledge in MongoDB and Express, and the Stripe API has very thorough documentation. This was a fun project to do, and the next step would probably be to build out an admin dashboard.'
+		furtherDetails: ' The goal of this project was to gain experience in building React applications completely solo, and set up a payment solution using Stripe. I had previously designed this e-commerce site in Figma, and it was a good opportunity to build it in React, experiment with building out a Stripe Checkout integration, and use Tailwind CSS for the first time.',
+		reflections: 'In using TailwindCSS for the first time, I have discovered its pros and cons, and have come to the conclusion that I would use it again for personal projects in the future. This was an enjoyable project to build, and the next step would probably be to build out an admin dashboard. The code featured is related to the Stripe Checkout integration. It uses the async and await function calls, and determines where to navigate upon success or failure. There was plenty of troubleshooting involved in getting this working.'
 	},
 ]
 
