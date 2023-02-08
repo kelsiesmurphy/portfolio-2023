@@ -12,7 +12,7 @@ const ListWrapper = styled.ul`
 const ListItem = styled.li`
 	cursor: pointer;
 	> h3 { 
-		color: var(--clr-grey-300);
+		color: var(--clr-grey-400);
 	}
 	> h3.active {
 		color: var(--clr-grey-700);
